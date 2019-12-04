@@ -7,20 +7,43 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
-    <link rel="stylesheet" href="https://github.com/VincentGarreau/particles.js.git/js.js" type="text/Javascript">
-    <link rel="stylesheet" href="https://github.com/VincentGarreau/particles.js.git/css.css" type="text/css">
+    
+    <style>
+            body {background-color: powderblue;}
+            h1   {color: blue;}
+            p    {color: red;}
+    </style>
+    <script>
+            function validateForm() {
+                
+                var x = document.forms["myForm"]["user"].value;
+                var y = document.forms["myForm"]["pass"].value;
+                if (x != "abc" || y !=123) {
+                    alert("Invalid credential");
+                    return false;
+                }
+                else{
+                    alert("Valid....");
+                }
+            }
+    </script>
 </head>
 <body>
+        <div id="particles-js"></div>
+
+        <script src="particles.js"></script>
+        <form name="myForm" onsubmit="return validateForm()" method="post">
         <table align="center">
                 <tr>
                   <th> UserName: <input type="text" name="user"/></th>
                 </tr>
                 <tr>
-                  <td>Password : <input type="password" name="password"/></td>
+                  <td>Password : <input type="password" name="pass"/></td>
                 </tr>
-                <th><input type="button" name="Login" value="Login"/></th></tr>
+                <th><button type="button" onclick="validateForm()">Login</button></th></tr>
                 </tr>
         </table>
+    </form>
     
 </body>
 </html>
