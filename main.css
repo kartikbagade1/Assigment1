@@ -1,3 +1,26 @@
 #particles-js {
     background: cornflowerblue;
+    width: 50%;
+    scroll-padding-left: 100px;
+    
+  }
+  center {
+    margin-left: 450px;
+    padding: 70px 0px;
+    border: 3px ;
+    text-align: center;
+  }
+ button{
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    background-color:white;
+        
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  div {
+    box-shadow: 10px 10px 5px grey;
   }
