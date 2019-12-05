@@ -6,10 +6,10 @@
     <title>Login Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     
     <style>
-            body {background-color: powderblue;}
+            body {background-color:rgb(49, 166, 182);}
     </style>
     <script>
             function validateForm() {
@@ -27,13 +27,14 @@
     </script>
    </head>
 <body>
-    <center>   
-        <div id = "particles-js">
-        <script src="particles.js"></script>
-        <form name="myForm" onsubmit="return validateForm()" method="post">
+    <div id="particles-js">
+    <script type="text/javascript" src="C:\Work\NodeJS\Assigment1\js\particles.js"></script>
+    <script type="text/javascript" src="C:\Work\NodeJS\Assigment1\js\app.js"></script>
+    <div class="loginNav">
+    <form name="myForm" onsubmit="return validateForm()" method="post">
         <table align="center">
                 <tr>
-                  <th> UserName: </th><th><input type="text" name="user"/></th>
+                  <td> UserName: </th><th><input type="text" name="user"/></td>
                 </tr>
                 <tr>
                   <td>Password : </th><th><input type="password" name="pass"/></td>
@@ -41,8 +42,7 @@
                 <td><button type="button" onclick="validateForm()">Login</button></td>
         </table>
     </form>
-    </div>
-</center>
- 
+</div>
+</div>
 </body>
 </html>
